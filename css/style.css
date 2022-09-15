@@ -1,0 +1,171 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* font-family: 'Ms Madi', cursive; */
+
+}
+/* CSS variables */
+:root{
+    --navbar-heaight:59px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* top: 0px; */
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+/* logo and image */
+#logo{
+    margin: 0px 0px;
+}
+#logo img{
+    margin: 0px 19px;
+    height: 70px;
+    width: 70px;
+}
+
+/* list styling */
+.nav{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white;
+    list-style: none;
+    padding: 3px 17px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 254px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    
+}
+#home::before{
+    content: "";
+    background: url(../img/mainHead.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    margin-top: -160px;
+}
+#home h1{
+    text-align: center;
+}
+p h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* services section  */
+#services{
+    margin: 20px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 5px 30px;
+    border-radius: 25px;
+    background-color: rgb(255, 236, 231);
+}
+#services .box img{
+    height: Auto;
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+h2 + p{
+    padding: 20px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../img/contact.jpg);
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    /* background-color: rgb(255, 224, 212); */
+    background-color: rgb(248, 228, 210);
+}
+#contact-box form{
+    width: 34%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
+footer{
+    background-color: pink;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 2rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.order{
+    padding: 3px 20px;
+    border: 2px solid palevioletred;
+    border-radius: 15px;
+    background-color: rgb(255, 224, 228);
+    margin: 15px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+/* Home */
+#home{
+    height: 360px;
+    padding: 3px 15px;
+}
+#navbar ul li{
+    font-size: 1rem;
+    padding: 0px, 2px;
+}
+#home::before{
+    height: 360px;
+}
+#home p{
+    font-size: 0.8rem;
+}
+/* Services */
+
+#services{
+    flex-direction: column;
+}
+
+/* Contact */
+
+/* Footer */
+
+/* Utillity Classes */
+.h-primary{
+    font-size: 1.2rem;
+}
